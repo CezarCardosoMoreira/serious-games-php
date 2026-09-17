@@ -71,7 +71,7 @@ $nomeUsuario = $_SESSION['usuario_nome'] ?? 'Colaborador';
 
             <div class="module-grid">
                 <!-- Tema 1 -->
-                <a href="jogo.php?tema=1" class="module-card">
+                <a href="tema1.php" class="module-card">
                     <div class="module-info">
                         <h3>Tema 1: Segurança da Informação</h3>
                         <p>Identificação de e-mails suspeitos e prevenção contra phishing.</p>
@@ -80,7 +80,7 @@ $nomeUsuario = $_SESSION['usuario_nome'] ?? 'Colaborador';
                 </a>
 
                 <!-- Tema 2 -->
-                <a href="jogo.php?tema=2" class="module-card">
+                <a href="tema2.php" class="module-card">
                     <div class="module-info">
                         <h3>Tema 2: Engenharia Social</h3>
                         <p>Análise de abordagens maliciosas e proteção de dados corporativos.</p>
@@ -89,7 +89,7 @@ $nomeUsuario = $_SESSION['usuario_nome'] ?? 'Colaborador';
                 </a>
 
                 <!-- Tema 3 -->
-                <a href="jogo.php?tema=3" class="module-card">
+                <a href="tema3.php" class="module-card">
                     <div class="module-info">
                         <h3>Tema 3: Conformidade e LGPD</h3>
                         <p>Boas práticas no tratamento e armazenamento de informações sensíveis.</p>
