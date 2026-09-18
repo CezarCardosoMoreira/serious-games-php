@@ -1,5 +1,5 @@
 <?php
-require_once '../model/conexao.php';
+require_once './model/conexao.php';
 // Configurações de Conexão com o Banco de Dados (PDO)
 $host = 'localhost';
 $dbname = 'db_serious_games';
