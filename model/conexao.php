@@ -19,7 +19,7 @@ try {
 }*/
 
 
-<?php
+
 // Substitua 'SEU_HOST_AQUI' pelo valor exato que aparece na variável MYSQLHOST no painel da Railway
 $host = getenv('MYSQLHOST') ?: 'mysql.railway.internal'; 
 $db   = getenv('MYSQL_DATABASE') ?: getenv('Mrailway');
@@ -39,4 +39,3 @@ try {
 }
 ?>
 
-?>
