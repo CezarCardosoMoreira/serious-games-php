@@ -1,2 +1,5 @@
 [phases.setup]
-nixPkgs = ["php83", "php83-extensions.pdo_mysql", "php83-extensions.mysqli"]
+nixPkgs = ["php", "phpPackages.pdo_mysql", "phpPackages.mysqli"]
+
+[providers]
+php = "8.3"
