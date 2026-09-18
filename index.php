@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['acao']) && $_POST['ac
 
             <!-- Abas de Navegação (Entrar / Criar Conta) -->
             <div >
-                <a href="./view/l1ogin.php"  class="btn-login">Login</a>
+                <a href="./view/login.php"  class="btn-login">Login</a>
                 <a href="./view/cadastro.php" class="btn-login">Cadastro</a>          
             </div>
 
