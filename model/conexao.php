@@ -19,18 +19,13 @@ try {
 }*/
 
 
-
-$host = getenv('MYSQLHOST') ?: getenv('DB_HOST') ?: 'containers-us-west-xx.railway.app'; // Fallback de segurança
-$db   = getenv('MYSQL_DATABASE') ?: getenv('MYSQLDATABASE');
+<?php
+// Substitua 'SEU_HOST_AQUI' pelo valor exato que aparece na variável MYSQLHOST no painel da Railway
+$host = getenv('MYSQLHOST') ?: 'mysql.railway.internal'; 
+$db   = getenv('MYSQL_DATABASE') ?: getenv('Mrailway');
 $user = getenv('MYSQLUSER') ?: 'root';
-$pass = getenv('MYSQL_ROOT_PASSWORD') ?: getenv('MYSQLPASSWORD');
+$pass = getenv('MYSQL_ROOT_PASSWORD') ?: getenv('VGfVxfMaGdayKwYkWldlesOUymHCZogZ');
 $port = getenv('MYSQLPORT') ?: '3306';
-
-// Se o host não estiver configurado nas variáveis da aplicação, avisamos claramente
-if (!$host || $host == 'containers-us-west-xx.railway.app') {
-    // Tenta ler diretamente se houver um serviço linkado
-    // Mas o ideal é garantirmos a variável no painel
-}
 
 try {
     $dsn = "mysql:host={$host};port={$port};dbname={$db};charset=utf8mb4";
@@ -42,5 +37,6 @@ try {
     echo "Erro na conexão com o banco de dados: " . $e->getMessage();
     exit;
 }
+?>
 
 ?>
