@@ -3,9 +3,10 @@ $host = getenv('MYSQLHOST');
 $db   = getenv('MYSQLDATABASE');
 $user = getenv('MYSQLUSER');
 $pass = getenv('MYSQLPASSWORD');
-$port = getenv('MYSQLPORT', 3306);
+$port = getenv('MYSQLPORT') ?: '3306';
 
 try {
+    // Note que usamos $host e $port explicitamente na string DSN
     $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
     $pdo = new PDO($dsn, $user, $pass, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
