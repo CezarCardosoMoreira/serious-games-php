@@ -1,13 +1,10 @@
 <?php
-$host = getenv('MYSQLHOST');
-$db   = getenv('MYSQLDATABASE');
-$user = getenv('MYSQLUSER');
-$pass = getenv('MYSQLPASSWORD');
+$host = getenv('MYSQLHOST') ?: getenv('DB_HOST');
+$db   = getenv('MYSQL_DATABASE') ?: getenv('MYSQLDATABASE');
+$user = getenv('MYSQLUSER') ?: 'root';
+// Aqui capturamos tanto MYSQL_ROOT_PASSWORD quanto MYSQLPASSWORD
+$pass = getenv('MYSQL_ROOT_PASSWORD') ?: getenv('MYSQLPASSWORD');
 $port = getenv('MYSQLPORT') ?: '3306';
-
-if (!$host) {
-    die("Erro: Variáveis de ambiente do banco de dados da Railway não foram encontradas.");
-}
 
 try {
     $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
