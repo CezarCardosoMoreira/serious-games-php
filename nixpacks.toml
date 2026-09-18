@@ -1,2 +1,2 @@
 [phases.setup]
-nixPkgs = ["php"]
+nixPkgs = ["php", "phpExtensions.pdo_mysql", "phpExtensions.mysqli"]
