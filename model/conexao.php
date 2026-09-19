@@ -1,5 +1,5 @@
 <?php
-/*
+
 $host = getenv('MYSQLHOST') ?: getenv('DB_HOST');
 $db   = getenv('MYSQL_DATABASE') ?: getenv('MYSQLDATABASE');
 $user = getenv('MYSQLUSER') ?: 'root';
@@ -16,7 +16,7 @@ try {
 } catch (PDOException $e) {
     echo "Erro na conexão com o banco de dados: " . $e->getMessage();
     exit;
-}*/
+}
 
 
 /*
@@ -37,7 +37,7 @@ try {
     echo "Erro na conexão com o banco de dados: " . $e->getMessage();
     exit;
 }*/
-
+/*
 $host = getenv('MYSQLHOST') ?: 'mysql.railway.internal'; 
 $db   = getenv('MYSQL_DATABASE') ?: getenv('MYSQLDATABASE');
 $user = getenv('MYSQLUSER') ?: 'root';
@@ -53,7 +53,7 @@ try {
 } catch (PDOException $e) {
     echo "Erro na conexão com o banco de dados: " . $e->getMessage();
     exit;
-}
+}*/
 
 ?>
 
