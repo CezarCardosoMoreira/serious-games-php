@@ -97,9 +97,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit" class="btn-decision" style="justify-content: center; background-color: #0f172a; color: #fff; border-color: #0f172a; font-weight: 600; margin-top: 10px; cursor: pointer;">
                     Entrar no Sistema
                 </button>
-                <a href="index.php" class="btn-decision" style="justify-content: center; background-color: #0f172a; color: #fff; border-color: #0f172a; font-weight: 600; margin-top: 10px; cursor: pointer;">
+                <a href="../index.php" class="btn-decision" style="justify-content: center; background-color: #0f172a; color: #fff; border-color: #0f172a; font-weight: 600; margin-top: 10px; cursor: pointer;">
                     Voltar
-            </a>
+                </a>
 
             </form>
 
