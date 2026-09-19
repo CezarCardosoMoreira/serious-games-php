@@ -1,10 +1,5 @@
 <?php
 require_once '../model/conexao.php';
-// Configurações de Conexão com o Banco de Dados (PDO)
-$host = 'localhost';
-$dbname = 'db_serious_games';
-$username = 'root'; // Altere conforme o seu ambiente (Laragon/MySQL)
-$password = '';     // Altere conforme a sua senha
 
 $mensagem = "";
 $status = "";
@@ -21,10 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validação básica dos campos
     if (!empty($nome) && $idade > 0 && !empty($setor) && !empty($cargo) && !empty($email) && !empty($senhaPura)) {
         try {
-            // Conexão com o banco via PDO
-            $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
             // Criptografia segura da senha
             $senhaCriptografada = password_hash($senhaPura, PASSWORD_DEFAULT);
 

@@ -1,10 +1,5 @@
 <?php
 require_once '../model/conexao.php';
-// Configurações de Conexão com o Banco de Dados (PDO)
-$host = 'localhost';
-$dbname = 'db_serious_games';
-$username = 'root'; // Altere conforme o seu ambiente
-$password = '';     // Altere conforme a sua senha
 
 $mensagem = "";
 $status = "";
@@ -16,10 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!empty($email) && !empty($senha)) {
         try {
-            // Conexão com o banco via PDO
-            $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
             // Busca o usuário pelo e-mail na tabela
             $sql = "SELECT * FROM usuarios WHERE email = :email LIMIT 1";
             $stmt = $pdo->prepare($sql);
