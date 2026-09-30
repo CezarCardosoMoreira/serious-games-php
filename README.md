@@ -2,9 +2,9 @@
 
 Projeto de Trabalho de Conclusão de Curso (TCC): uma plataforma de capacitação profissional baseada em simulações interativas e serious games. O objetivo é apresentar situações do cotidiano corporativo para apoiar o aprendizado sobre segurança da informação, engenharia social e privacidade.
 
-[Projeto-TCC-seriousgames](https://serious-games-php-production.up.railway.app)
 
-link de acesso: 
+link de acesso: [Projeto-TCC-seriousgames](https://serious-games-php-production.up.railway.app)
+ 
 
 ## Funcionalidades
 
@@ -84,3 +84,5 @@ O cadastro de usuário e o login dependem do banco de dados configurado. O resta
 ## Estado do projeto
 
 Este projeto é acadêmico e está em desenvolvimento. Atualmente, as respostas e a conclusão dos módulos não são salvas como resultados ou pontuação. A validação de sessão também não está aplicada às páginas dos módulos; portanto, o fluxo de login não deve ser considerado um mecanismo de controle de acesso pronto para produção.
+
+link de acesso: [Projeto-TCC-seriousgames](https://serious-games-php-production.up.railway.app)
